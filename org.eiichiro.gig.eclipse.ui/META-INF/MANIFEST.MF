@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gig Plugin UI
+Bundle-SymbolicName: org.eiichiro.gig.eclipse.ui;singleton:=true
+Bundle-Version: 0.4.3.qualifier
+Bundle-Activator: org.eiichiro.gig.eclipse.ui.GigUIPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.6.0",
+ org.eclipse.debug.core;bundle-version="3.6.0",
+ org.eclipse.ui.ide;bundle-version="3.6.1",
+ org.eclipse.jdt.launching;bundle-version="3.5.100",
+ org.eclipse.jdt.ui;bundle-version="3.6.1",
+ org.eclipse.jdt.core;bundle-version="3.6.1",
+ org.eclipse.ui.console;bundle-version="3.5.0",
+ org.eclipse.debug.ui;bundle-version="3.6.1",
+ org.eiichiro.gig;bundle-version="0.4.0",
+ org.eiichiro.gig.eclipse.core;bundle-version="0.4.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

@@ -1,0 +1,1 @@
+persistenceUnit = 'notexist-unit'

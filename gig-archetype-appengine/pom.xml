@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+  	<groupId>org.eiichiro.gig</groupId>
+  	<artifactId>gig</artifactId>
+  	<version>0.4.3-SNAPSHOT</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>gig-archetype-appengine</artifactId>
+  <name>Gig App Engine Webapp Archetype</name>
+  <description>An archetype which contains a simple Gig Webapp project for Google App Engine.</description>
+  <packaging>maven-archetype</packaging>
+  <build>
+  	<extensions>
+  		<extension>
+  			<groupId>org.apache.maven.archetype</groupId>
+  			<artifactId>archetype-packaging</artifactId>
+  		</extension>
+  	</extensions>
+  	<pluginManagement>
+  		<plugins>
+  			<!-- This plugin's configuration is used to store Eclipse m2e settings only. 
+  			It has no influence on the Maven build itself. -->
+  			<plugin>
+  				<groupId>org.eclipse.m2e</groupId>
+  				<artifactId>lifecycle-mapping</artifactId>
+  				<version>1.0.0</version>
+  				<configuration>
+  					<lifecycleMappingMetadata>
+  						<pluginExecutions>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.apache.maven.plugins</groupId>
+  									<artifactId>maven-enforcer-plugin</artifactId>
+  									<versionRange>1.0</versionRange>
+  									<goals>
+  										<goal>enforce</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  						</pluginExecutions>
+  					</lifecycleMappingMetadata>
+  				</configuration>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
+  </build>
+</project>

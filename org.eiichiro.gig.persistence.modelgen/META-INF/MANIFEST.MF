@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gig JPA Metamodel Generator
+Bundle-SymbolicName: org.eiichiro.gig.persistence.modelgen; singleton:=true
+Bundle-Version: 0.4.3.qualifier
+Bundle-Activator: org.eiichiro.gig.persistence.modelgen.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

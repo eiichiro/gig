@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gig Plugin Core
+Bundle-SymbolicName: org.eiichiro.gig.eclipse.core;singleton:=true
+Bundle-Version: 0.4.3.qualifier
+Bundle-Activator: org.eiichiro.gig.eclipse.core.GigPlugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.6.0",
+ org.eclipse.core.expressions;bundle-version="3.4.200",
+ org.eclipse.jdt.core;bundle-version="3.6.1",
+ org.eiichiro.gig;bundle-version="0.4.3"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.eiichiro.gig.eclipse.core.nature,
+ org.eiichiro.gig.eclipse.core.resources

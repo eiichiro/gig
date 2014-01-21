@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gig Acid House Metamodel Generator
+Bundle-SymbolicName: org.eiichiro.gig.acidhouse.modelgen; singleton:=true
+Bundle-Version: 0.4.3.qualifier
+Bundle-Activator: org.eiichiro.gig.acidhouse.modelgen.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jdt.apt.core,
+ org.eiichiro.gig
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/acidhouse-modelgen-0.6.2.jar
+Export-Package: org.eiichiro.acidhouse.metamodel.processing

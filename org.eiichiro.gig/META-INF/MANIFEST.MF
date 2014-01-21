@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gig
+Bundle-SymbolicName: org.eiichiro.gig
+Bundle-Version: 0.4.3.qualifier
+Bundle-Activator: org.eiichiro.gig.Activator
+Require-Bundle: org.eclipse.wst.common.project.facet.ui;bundle-version="1.4.102",
+ org.eclipse.jdt.core
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/gig-shell-0.0.1-jar-with-dependencies.jar
+Export-Package: org.eiichiro.gig,
+ org.eiichiro.gig.shell

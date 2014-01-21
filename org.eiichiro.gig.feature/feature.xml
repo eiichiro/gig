@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eiichiro.gig.feature"
+      label="Gig Eclipse Plugin"
+      version="0.4.3.qualifier">
+
+   <description url="http://gig.eiichiro.org/">
+      Gig Eclipse Plugin
+   </description>
+
+   <copyright>
+      Copyright (C) 2011-2014 Eiichiro Uchiumi. All Rights Reserved.
+   </copyright>
+
+   <license url="http://www.apache.org/licenses/LICENSE-2.0">
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+   </license>
+
+   <includes
+         id="org.eiichiro.gig.acidhouse.modelgen.feature"
+         version="0.0.0"
+         name="Gig Acid House Metamodel Generator"
+         optional="true"/>
+
+   <requires>
+      <import plugin="org.eclipse.wst.common.project.facet.ui" version="1.4.102" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.debug.core" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.launching" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eiichiro.gig" version="0.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eiichiro.gig.eclipse.core" version="0.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eiichiro.gig" version="0.4.3" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eiichiro.gig"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eiichiro.gig.eclipse.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eiichiro.gig.eclipse.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

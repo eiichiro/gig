@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="gigNature"
+         name="Gig Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run class="org.eiichiro.gig.eclipse.core.nature.GigNature"/>
+      </runtime>
+      <requires-nature id="org.eclipse.jdt.core.javanature"/>
+   </extension>
+   <extension
+         point="org.eclipse.jdt.core.classpathContainerInitializer">
+      <classpathContainerInitializer
+   			class="org.eiichiro.gig.eclipse.core.jdt.GigClasspathContainerInitializer"
+   			id="org.eiichiro.gig.eclipse.core.GIG_CONTAINER">
+      </classpathContainerInitializer>
+   </extension>
+   <extension
+         id="org.eiichiro.gig.eclipse.core.marker"
+         point="org.eclipse.core.resources.markers">
+		<persistent value="true"/>
+		<super type="org.eclipse.core.resources.problemmarker"/>
+		<super type="org.eclipse.core.resources.textmarker"/>
+   </extension>
+   <extension
+         point="org.eclipse.jdt.core.compilationParticipant">
+		<compilationParticipant 
+				class="org.eiichiro.gig.eclipse.core.compiler.GigCompilationParticipant" 
+				createsProblems="true" 
+				id="org.eiichiro.gig.eclipse.core.gigCompilationParticipant" 
+				modifiesEnvironment="false">
+			<managedMarker markerType="org.eiichiro.gig.eclipse.core.marker"/>
+		</compilationParticipant>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+   		<propertyTester
+   				id="org.eiichiro.gig.eclipse.core.expressions.entityTester"
+   				type="org.eclipse.jdt.core.ICompilationUnit"
+   				namespace="org.eiichiro.gig.eclipse.core"
+   				properties="isEntity"
+   				class="org.eiichiro.gig.eclipse.core.expressions.EntityTester">
+   		</propertyTester>
+   </extension>
+</plugin>

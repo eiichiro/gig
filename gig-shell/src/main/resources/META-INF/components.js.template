@@ -1,0 +1,5 @@
+// 
+// Components to be deployed on the application (including web endpoints).
+components = [
+${components}
+]

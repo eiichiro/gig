@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Courier, monospace;
+	color: #00ff00;
+	background-color: #000000;
+}
+a {
+	color: #c0c0c0;
+}
+#container {
+	margin: 0px auto;
+	width: 800px;
+	padding: 1em;
+}
+.success {
+	color: #00ffff;
+	font-weight: bold;
+}
+.error {
+	color: #ff6347;
+	font-weight: bold;
+}	
+.cursor {
+	color: #000000;
+	background-color: #00ff00;
+}

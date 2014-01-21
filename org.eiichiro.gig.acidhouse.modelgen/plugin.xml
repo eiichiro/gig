@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.jdt.apt.core.annotationProcessorFactory">
+   		<java6processors enableDefault="true">
+   			<java6processor class="org.eiichiro.acidhouse.metamodel.processing.MetamodelGenerator">
+   			</java6processor>
+   		</java6processors>
+   </extension>
+</plugin>

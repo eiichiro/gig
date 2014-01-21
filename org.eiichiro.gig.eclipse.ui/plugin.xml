@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Gig"
+            id="org.eiichiro.gig.eclipse.ui.wizards.gig">
+      </category>
+      <wizard
+            name="Web Endpoint"
+            category="org.eiichiro.gig.eclipse.ui.wizards.gig"
+            class="org.eiichiro.gig.eclipse.ui.wizards.NewWebEndpointWizard"
+            id="org.eiichiro.gig.eclipse.ui.wizards.newWebEndpointWizard">
+      </wizard>
+      <wizard
+            name="Component"
+            category="org.eiichiro.gig.eclipse.ui.wizards.gig"
+            class="org.eiichiro.gig.eclipse.ui.wizards.NewComponentWizard"
+            id="org.eiichiro.gig.eclipse.ui.wizards.newComponentWizard">
+      </wizard>
+      <wizard
+            name="Component Wrapper"
+            category="org.eiichiro.gig.eclipse.ui.wizards.gig"
+            class="org.eiichiro.gig.eclipse.ui.wizards.NewComponentWrapperWizard"
+            id="org.eiichiro.gig.eclipse.ui.wizards.newComponentWrapperWizard">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="org.eiichiro.gig.eclipse.ui.commands.gig"
+            name="Gig">
+      </category>
+      <command
+            categoryId="org.eiichiro.gig.eclipse.ui.commands.gig"
+            id="org.eiichiro.gig.eclipse.ui.commands.enableNature"
+            name="Enable Nature Command">
+      </command>
+      <command
+            categoryId="org.eiichiro.gig.eclipse.ui.commands.gig"
+            id="org.eiichiro.gig.eclipse.ui.commands.shell"
+            name="Shell Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eiichiro.gig.eclipse.ui.handlers.EnableNatureHandler"
+            commandId="org.eiichiro.gig.eclipse.ui.commands.enableNature">
+      </handler>
+      <handler
+            class="org.eiichiro.gig.eclipse.ui.handlers.ShellHandler"
+            commandId="org.eiichiro.gig.eclipse.ui.commands.shell">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               id="org.eiichiro.gig.eclipse.ui.popup.gig"
+               label="Gig">
+	         <command 
+	         		commandId="org.eiichiro.gig.eclipse.ui.commands.enableNature"
+	         		label="Enable Gig">
+	         	<visibleWhen>
+	         		<with variable="selection">
+	         			<and>
+	         				<count value="1"/>
+	         				<iterate>
+	         					<and>
+	         						<or>
+	         							<instanceof value="org.eclipse.core.resources.IProject"/>
+	         							<instanceof value="org.eclipse.jdt.core.IJavaProject"/>
+	         						</or>
+         							<test property="org.eclipse.jdt.launching.hasProjectNature" 
+         									args="org.eclipse.m2e.core.maven2Nature"/>
+	         						<not>
+	         							<test property="org.eclipse.jdt.launching.hasProjectNature" 
+	         									args="org.eiichiro.gig.eclipse.core.gigNature"/>
+	         						</not>
+	         					</and>
+	         				</iterate>
+	         			</and>
+	         		</with>
+	         	</visibleWhen>
+	         </command>
+	         <command 
+	         		commandId="org.eiichiro.gig.eclipse.ui.commands.shell"
+	         		label="Shell">
+	         	<visibleWhen>
+	         		<with variable="selection">
+	         			<and>
+	         				<count value="1"/>
+	         				<iterate>
+	         					<and>
+	         						<or>
+	         							<instanceof value="org.eclipse.core.resources.IProject"/>
+	         							<instanceof value="org.eclipse.jdt.core.IJavaProject"/>
+	         						</or>
+         							<test property="org.eclipse.jdt.launching.hasProjectNature" 
+         									args="org.eiichiro.gig.eclipse.core.gigNature"/>
+	         					</and>
+	         				</iterate>
+	         			</and>
+	         		</with>
+	         	</visibleWhen>
+	         </command>
+         </menu>
+      </menuContribution>
+   </extension>
+</plugin>

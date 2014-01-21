@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+		http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+	<persistence-unit name="heroku-0">
+	</persistence-unit>
+	<persistence-unit name="heroku-1">
+	</persistence-unit>
+	<persistence-unit></persistence-unit>
+	<foo></foo>
+</persistence>
