@@ -3,9 +3,6 @@
 		xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" 
 		name="gig-archetype-webapp">
 	<fileSets>
-		<fileSet filtered="true">
-			<directory></directory>
-		</fileSet>
 	    <fileSet filtered="true">
 			<directory>.apt_generated</directory>
 		</fileSet>
@@ -21,14 +18,17 @@
 		<fileSet filtered="true">
 			<directory>src/main/resources</directory>
 		</fileSet>
-		<fileSet filtered="true">
-			<directory>src/main/webapp</directory>
-		</fileSet>
-		<fileSet filtered="true">
+		<fileSet>
 			<directory>src/main/webapp/img</directory>
 		</fileSet>
-		<fileSet filtered="true">
+		<fileSet>
+			<directory>src/main/webapp/js</directory>
+		</fileSet>
+		<fileSet>
 			<directory>src/main/webapp/WEB-INF/lib</directory>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>src/main/webapp</directory>
 		</fileSet>
 		<fileSet filtered="true" packaged="true">
 			<directory>src/test/java</directory>

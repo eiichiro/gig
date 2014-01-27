@@ -4,13 +4,6 @@
 		name="gig-archetype-webapp">
 	<fileSets>
 		<fileSet filtered="true">
-			<directory></directory>
-			<includes>
-				<include>.gitignore</include>
-				<include>Procfile</include>
-			</includes>
-		</fileSet>
-		<fileSet filtered="true">
 			<directory>.apt_generated</directory>
 		</fileSet>
 		<fileSet filtered="true">
@@ -25,20 +18,30 @@
 		<fileSet filtered="true">
 			<directory>src/main/resources</directory>
 		</fileSet>
-		<fileSet filtered="true">
-			<directory>src/main/webapp</directory>
-		</fileSet>
-		<fileSet filtered="true">
+		<fileSet>
 			<directory>src/main/webapp/img</directory>
 		</fileSet>
-		<fileSet filtered="true">
+		<fileSet>
+			<directory>src/main/webapp/js</directory>
+		</fileSet>
+		<fileSet>
 			<directory>src/main/webapp/WEB-INF/lib</directory>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>src/main/webapp</directory>
 		</fileSet>
 		<fileSet filtered="true" packaged="true">
 			<directory>src/test/java</directory>
 		</fileSet>
 		<fileSet filtered="true">
 			<directory>src/test/resources</directory>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>.gitignore</include>
+				<include>Procfile</include>
+			</includes>
 		</fileSet>
 	</fileSets>
 </archetype-descriptor>
