@@ -3,10 +3,10 @@
    <description name="Gig Update Site for Eclipse" url="http://dl.eiichiro.org/eclipse/">
       Gig Update Site for Eclipse
    </description>
-   <feature url="features/org.eiichiro.gig.acidhouse.modelgen.feature_0.0.2.201401210302.jar" id="org.eiichiro.gig.acidhouse.modelgen.feature" version="0.0.2.201401210302">
+   <feature url="features/org.eiichiro.gig.acidhouse.modelgen.feature_0.0.2.201401280039.jar" id="org.eiichiro.gig.acidhouse.modelgen.feature" version="0.0.2.201401280039">
       <category name="org.eiichiro.gig"/>
    </feature>
-   <feature url="features/org.eiichiro.gig.feature_0.4.3.201401210302.jar" id="org.eiichiro.gig.feature" version="0.4.3.201401210302">
+   <feature url="features/org.eiichiro.gig.feature_0.4.3.201401280039.jar" id="org.eiichiro.gig.feature" version="0.4.3.201401280039">
       <category name="org.eiichiro.gig"/>
    </feature>
    <category-def name="org.eiichiro.gig" label="Gig Developer Tools">

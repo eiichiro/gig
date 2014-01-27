@@ -12,6 +12,7 @@ import java.lang.reflect.Modifier;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -33,7 +34,6 @@ import org.eiichiro.bootleg.CtClassClassResolver;
 import org.eiichiro.bootleg.annotation.Endpoint;
 import org.eiichiro.gig.Configuration;
 import org.eiichiro.jaguar.Builtin;
-import org.eiichiro.jaguar.ClasspathScanner;
 import org.eiichiro.jaguar.Component;
 import org.eiichiro.jaguar.Stereotype;
 import org.eiichiro.jaguar.deployment.Deployment;
@@ -73,26 +73,29 @@ public class Scan implements Command {
 		MavenXpp3Reader reader = new MavenXpp3Reader();
 		Model model = reader.read(new FileReader(pom));
 		MavenProject project = new MavenProject(model);
-		List<URL> urls = new ArrayList<>();
-		
-		for (String element : project.getCompileClasspathElements()) {
-			urls.add(new File(element).toURI().toURL());
-		}
-		
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		StringBuilder template = new StringBuilder();
 		
 		try (BufferedReader r = new BufferedReader(
-				new InputStreamReader(loader.getResourceAsStream(Configuration.COMPONENTS_JS + ".template")))) {
+				new InputStreamReader(
+						Thread.currentThread().getContextClassLoader().getResourceAsStream(
+								Configuration.COMPONENTS_JS + ".template")))) {
 			String l = null;
 			
 			while ((l = r.readLine()) != null) {
-				template.append(l);
+				template.append(l + "\n");
 			}
 		}
 		
-		Resource resource = project.getResources().get(0);
-		File directory = new File(resource.getDirectory() + File.separator + "META-INF");
+		File directory = null;
+		List<Resource> resources = project.getResources();
+		
+		if (resources.isEmpty()) {
+			directory = new File(base + File.separator + "src" + File.separator
+					+ "main" + File.separator + "resources" + File.separator
+					+ "META-INF");
+		} else {
+			directory = new File(resources.get(0).getDirectory() + File.separator + "META-INF");
+		}
 		
 		if (!directory.exists()) {
 			directory.mkdirs();
@@ -104,16 +107,7 @@ public class Scan implements Command {
 			file.delete();
 		}
 		
-		Iterator<Class<?>> iterator = null;
-		
-		try {
-			Thread.currentThread().setContextClassLoader(
-					URLClassLoader.newInstance(urls.toArray(new URL[urls.size()]), loader));
-			iterator = scan().iterator();
-		} finally {
-			Thread.currentThread().setContextClassLoader(loader);
-		}
-		
+		Iterator<Class<?>> iterator = scan().iterator();
 		StringBuilder components = new StringBuilder();
 		shell.console().print("Writing [" + Configuration.COMPONENTS_JS + "]...");
 		
@@ -145,8 +139,19 @@ public class Scan implements Command {
 	}
 	
 	private Collection<Class<?>> scan() throws Exception {
-		ClasspathScanner scanner = new ClasspathScanner();
-		CtClassClassResolver resolver = new CtClassClassResolver(scanner.paths());
+		List<URL> paths = new ArrayList<URL>();
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		
+		if (loader instanceof URLClassLoader) {
+			paths = Arrays.asList(((URLClassLoader) loader).getURLs());
+		} else {
+			for (String path : Environment.getProperty("java.class.path").split(File.pathSeparator)) {
+				paths.add(new File(path).toURI().toURL());
+			}
+		}
+		
+		shell.console().println("Scanning components from classpath [" + paths + "]");
+		CtClassClassResolver resolver = new CtClassClassResolver(paths);
 		Set<CtClass> ctClasses = resolver.resolve(new Matcher<CtClass>() {
 
 			@Override

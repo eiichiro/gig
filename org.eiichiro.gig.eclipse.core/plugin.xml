@@ -9,6 +9,7 @@
          <run class="org.eiichiro.gig.eclipse.core.nature.GigNature"/>
       </runtime>
       <requires-nature id="org.eclipse.jdt.core.javanature"/>
+      <requires-nature id="org.eclipse.m2e.core.maven2Nature"/>
    </extension>
    <extension
          point="org.eclipse.jdt.core.classpathContainerInitializer">

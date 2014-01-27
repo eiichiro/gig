@@ -13,8 +13,10 @@ import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.IJavaProject;
@@ -62,7 +64,7 @@ public class EnableNatureHandler extends AbstractHandler {
 						throws CoreException, InvocationTargetException,
 						InterruptedException {
 					// Enabling Gig nature.
-					monitor.beginTask("Enabling Gig", 2);
+					monitor.beginTask("Enabling Gig", 3);
 					monitor.subTask("Enabling Gig nature");
 					IProjectDescription description = proj.getDescription();
 					String[] natures = description.getNatureIds();
@@ -73,18 +75,39 @@ public class EnableNatureHandler extends AbstractHandler {
 					proj.setDescription(description, null);
 					monitor.worked(1);
 					
+					// Adding Gig libraries to the classpath.
+					monitor.subTask("Adding Gig libraries to the classpath");
+					IJavaProject javaProject = JavaCore.create(proj);
+					IClasspathEntry[] classpath = javaProject.getRawClasspath();
+					IPath path = new Path("org.eiichiro.gig.eclipse.core.GIG_CONTAINER");
+					boolean found = false;
+					
+					for (IClasspathEntry entry : classpath) {
+						if (entry.getPath().equals(path)) {
+							found = true;
+							break;
+						}
+					}
+					
+					if (!found) {
+						IClasspathEntry container = JavaCore.newContainerEntry(path, false);
+						IClasspathEntry[] entries = new IClasspathEntry[classpath.length + 1];
+						System.arraycopy(classpath, 0, entries, 0, classpath.length);
+						entries[classpath.length] = container;
+						javaProject.setRawClasspath(entries, monitor);
+					}
+					
 					// Creating Gig-generated source directory.
 					monitor.subTask("Creating Gig-generated source directory");
 					IFolder folder = proj.getFolder(".gig_generated");
 					
 					if (!folder.exists()) {
 						folder.create(true, true, monitor);
-						IJavaProject javaProject = JavaCore.create(proj);
-						IClasspathEntry[] classpath = javaProject.getRawClasspath();
-						IClasspathEntry[] entries = new IClasspathEntry[classpath.length + 1];
-						System.arraycopy(classpath, 0, entries, 0, classpath.length);
+						IClasspathEntry[] c = javaProject.getRawClasspath();
+						IClasspathEntry[] entries = new IClasspathEntry[c.length + 1];
+						System.arraycopy(c, 0, entries, 0, c.length);
 						IClasspathEntry source = JavaCore.newSourceEntry(folder.getFullPath());
-						entries[classpath.length] = source;
+						entries[c.length] = source;
 						javaProject.setRawClasspath(entries, monitor);
 					}
 					
