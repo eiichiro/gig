@@ -216,7 +216,7 @@ public class Configuration {
 					Object endpoints = scope.get(ENDPOINTS);
 					
 					if (endpoints == null && configuration != null) {
-						endpoints = Collections2.filter((Set<Class<?>>) get(COMPONENTS), new Predicate<Class<?>>() {
+						endpoints = Collections2.filter((Collection<Class<?>>) get(COMPONENTS), new Predicate<Class<?>>() {
 
 							@Override
 							public boolean apply(Class<?> clazz) {

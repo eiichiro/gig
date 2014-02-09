@@ -208,7 +208,7 @@ public class Scan implements Command {
 		for (CtClass ctClass : ctClasses) {
 			try {
 				components.add(Class.forName(ctClass.getName(), true, Thread.currentThread().getContextClassLoader()));
-				shell.console().println("Class [" + ctClass.getName() + "] ");
+				shell.console().println("Class [" + ctClass.getName() + "] scaned");
 			} catch (Exception e) {}
 		}
 		
