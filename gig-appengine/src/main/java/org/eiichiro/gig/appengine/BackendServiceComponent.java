@@ -27,6 +27,7 @@ import com.google.appengine.api.backends.BackendServiceFactory;
  * 
  * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
  */
+@Deprecated
 @Name("com.google.appengine.api.backends.BackendService")
 @AppEngine
 public class BackendServiceComponent extends Component<BackendService> {

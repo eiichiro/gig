@@ -18,7 +18,7 @@ import com.google.appengine.api.datastore.AsyncDatastoreService;
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.files.FileService;
 import com.google.appengine.api.images.ImagesService;
-import com.google.appengine.api.labs.modules.ModulesService;
+import com.google.appengine.api.modules.ModulesService;
 import com.google.appengine.api.mail.MailService;
 import com.google.appengine.api.memcache.AsyncMemcacheService;
 import com.google.appengine.api.memcache.MemcacheService;

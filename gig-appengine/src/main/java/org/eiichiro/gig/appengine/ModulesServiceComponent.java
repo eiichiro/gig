@@ -18,8 +18,8 @@ package org.eiichiro.gig.appengine;
 import org.eiichiro.jaguar.Component;
 import org.eiichiro.jaguar.inject.Name;
 
-import com.google.appengine.api.labs.modules.ModulesService;
-import com.google.appengine.api.labs.modules.ModulesServiceFactory;
+import com.google.appengine.api.modules.ModulesService;
+import com.google.appengine.api.modules.ModulesServiceFactory;
 
 /**
  * {@code ModulesServiceComponent} is a Gig component which is representing 
@@ -27,7 +27,7 @@ import com.google.appengine.api.labs.modules.ModulesServiceFactory;
  * 
  * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
  */
-@Name("com.google.appengine.api.labs.modules.ModulesService")
+@Name("com.google.appengine.api.modules.ModulesService")
 @AppEngine
 public class ModulesServiceComponent extends Component<ModulesService> {
 
