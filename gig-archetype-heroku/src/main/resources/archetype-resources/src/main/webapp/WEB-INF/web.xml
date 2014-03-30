@@ -16,7 +16,7 @@
 	
 	<!-- Listener for a Gig application. -->
 	<listener>
-		<listener-class>org.eiichiro.gig.WebFilter</listener-class>
+		<listener-class>org.eiichiro.gig.WebListener</listener-class>
 	</listener>
 	
 	<welcome-file-list>
