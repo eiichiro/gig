@@ -14,10 +14,11 @@ import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import javassist.CtClass;
 import jline.internal.InputStreamReader;
@@ -203,7 +204,14 @@ public class Scan implements Command {
 			}
 			
 		});
-		Set<Class<?>> components = new HashSet<>();
+		Set<Class<?>> components = new TreeSet<Class<?>>(new Comparator<Class<?>>() {
+
+			@Override
+			public int compare(Class<?> o1, Class<?> o2) {
+				return o1.getName().compareTo(o2.getName());
+			}
+			
+		});
 		
 		for (CtClass ctClass : ctClasses) {
 			try {
