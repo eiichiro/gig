@@ -70,6 +70,7 @@ public final class Gig {
 		if (configuration == null) {
 			logger.error("Core component [" + Configuration.class.getName() + "] cannot be installed; Shutting down Gig...");
 			shutdown(context);
+			return;
 		}
 		
 		Class<?> deployment = configuration.get(Configuration.DEPLOYMENT);
