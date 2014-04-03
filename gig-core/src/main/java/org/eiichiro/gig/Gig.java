@@ -66,6 +66,12 @@ public final class Gig {
 		
 		Jaguar.install(Configuration.class);
 		Configuration configuration = Jaguar.component(Configuration.class);
+		
+		if (configuration == null) {
+			logger.error("Core component [" + Configuration.class.getName() + "] cannot be installed; Shutting down Gig...");
+			shutdown(context);
+		}
+		
 		Class<?> deployment = configuration.get(Configuration.DEPLOYMENT);
 		
 		if (deployment != null) {
