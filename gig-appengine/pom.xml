@@ -82,12 +82,14 @@
   		<artifactId>appengine-api-1.0-sdk</artifactId>
   		<version>${appengine.version}</version>
   		<type>jar</type>
+  		<scope>provided</scope>
   	</dependency>
   	<dependency>
   		<groupId>com.google.appengine</groupId>
   		<artifactId>appengine-api-labs</artifactId>
   		<version>${appengine.version}</version>
   		<type>jar</type>
+  		<scope>provided</scope>
   	</dependency>
   	<dependency>
   		<groupId>javax.servlet</groupId>
