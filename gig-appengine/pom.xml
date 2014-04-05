@@ -67,7 +67,7 @@
   </build>
   
   <properties>
-  	<appengine.version>1.9.1</appengine.version>
+  	<appengine.version>1.9.2</appengine.version>
   </properties>
   
   <dependencies>

@@ -10,7 +10,7 @@
   <name>Gig Acid House App Engine</name>
   <description>Acid House components for App Engine Datastore</description>
   <properties>
-  	<appengine.version>1.9.1</appengine.version>
+  	<appengine.version>1.9.2</appengine.version>
   </properties>
   
   <dependencies>
