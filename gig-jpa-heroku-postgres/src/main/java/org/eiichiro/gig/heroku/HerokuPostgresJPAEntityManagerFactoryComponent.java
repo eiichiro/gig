@@ -82,7 +82,7 @@ public class HerokuPostgresJPAEntityManagerFactoryComponent extends Component<En
 		String database = Environment.getenv(DATABASE_URL);
 		
 		if (database == null) {
-			logger.warn("Environment variable [$" + DATABASE_URL + "] has not been specified; " +
+			logger.error("Environment variable [$" + DATABASE_URL + "] has not been specified; " +
 					"So you don't have any access to the database service in this application");
 		} else {
 			logger.info("$DATABASE_URL is [" + database + "]");
@@ -108,7 +108,7 @@ public class HerokuPostgresJPAEntityManagerFactoryComponent extends Component<En
 				List<String> persistenceUnits = processor.persistenceUnits();
 				
 				if (persistenceUnits.isEmpty()) {
-					logger.warn("Cannot access to the database service in this application; " +
+					logger.error("Cannot access to the database service in this application; " +
 							"No 'persistence-unit' is specified in 'persistence.xml'");
 					return;
 				}

@@ -70,7 +70,7 @@ public class JPAEntityManagerFactoryComponent extends Component<EntityManagerFac
 			List<String> persistenceUnits = processor.persistenceUnits();
 			
 			if (persistenceUnits.isEmpty()) {
-				logger.warn("Cannot access to the database service in this application; " +
+				logger.error("Cannot access to the database service in this application; " +
 						"No 'persistence-unit' is specified in 'persistence.xml'");
 				return;
 			}
