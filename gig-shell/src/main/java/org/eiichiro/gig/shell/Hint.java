@@ -14,7 +14,7 @@ import org.eiichiro.ash.Usage;
 /**
  * {@code Hint}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Hint implements Command {
 

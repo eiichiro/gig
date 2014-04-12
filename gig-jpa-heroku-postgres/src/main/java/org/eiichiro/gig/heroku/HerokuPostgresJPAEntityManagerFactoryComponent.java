@@ -40,7 +40,7 @@ import org.slf4j.LoggerFactory;
  * {@code HerokuPostgresJPAEntityManagerFactoryComponent} is a representing JPA 2.0 
  * {@code EntityManagerFactory} for PostgreSQL-based Heroku database service.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("org.eiichiro.gig.heroku.HerokuPostgresJPAEntityManagerFactory")
 @Singleton

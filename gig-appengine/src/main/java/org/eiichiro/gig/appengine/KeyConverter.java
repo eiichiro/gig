@@ -26,7 +26,7 @@ import com.google.appengine.api.datastore.KeyFactory;
  * {@code com.google.appengine.api.datastore.Key}.
  * This converter is used in Web endpoint parameter construction.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class KeyConverter extends AbstractConverter {
 

@@ -26,7 +26,7 @@ import org.eiichiro.jaguar.Stereotype;
  * <a href="http://martinfowler.com/eaaCatalog/repository.html">Repository</a> 
  * component described in P of EAA.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

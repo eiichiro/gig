@@ -28,7 +28,7 @@ import com.google.appengine.api.datastore.GeoPt;
  * {@code com.google.appengine.api.datastore.GeoPt}.
  * This converter is used in Web endpoint parameter construction.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class GeoPtConverter extends AbstractConverter {
 

@@ -29,7 +29,7 @@ import org.eiichiro.reverb.system.Environment;
 /**
  * {@code Main}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Main {
 

@@ -23,7 +23,7 @@ import org.eiichiro.jaguar.Jaguar;
  * {@code WebListener} is a {@code org.eiichiro.jaguar.WebListener} extension to 
  * bootstrap/shutdown Gig application.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class WebListener extends org.eiichiro.jaguar.WebListener {
 

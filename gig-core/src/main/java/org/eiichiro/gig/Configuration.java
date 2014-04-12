@@ -73,7 +73,7 @@ import com.google.common.collect.Collections2;
  * {@code Configuration} is a built-in place holder for Gig application's 
  * configuration settings.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Builtin
 @Name("org.eiichiro.gig.Configuration")

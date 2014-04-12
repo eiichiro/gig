@@ -25,7 +25,7 @@ import org.eiichiro.jaguar.inject.Binding;
  * {@code Strong} is a binding annotation to qualify 
  * {@code AppEngineStrongDatastoreSession}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

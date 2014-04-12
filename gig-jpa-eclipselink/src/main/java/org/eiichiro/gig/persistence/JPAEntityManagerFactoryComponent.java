@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
  * {@code JPAEntityManagerFactoryComponent} is a representing JPA 2.0 
  * {@code EntityManagerFactory}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("org.eiichiro.gig.persistence.JPAEntityManagerFactory")
 @Singleton

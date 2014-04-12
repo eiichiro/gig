@@ -25,7 +25,7 @@ import com.google.appengine.api.datastore.Text;
  * {@code com.google.appengine.api.datastore.Text}.
  * This converter is used in Web endpoint parameter construction.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class TextConverter extends AbstractConverter {
 

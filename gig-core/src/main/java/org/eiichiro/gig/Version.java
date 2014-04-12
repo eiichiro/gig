@@ -18,7 +18,7 @@ package org.eiichiro.gig;
 /**
  * {@code Version} represents the serial version for current Gig build.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Version {
 

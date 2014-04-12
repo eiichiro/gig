@@ -25,7 +25,7 @@ import com.google.appengine.api.mail.MailServiceFactory;
  * {@code MailServiceComponent} is a Gig component which is representing 
  * Google App Engine {@code MailService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("com.google.appengine.api.mail.MailService")
 @AppEngine

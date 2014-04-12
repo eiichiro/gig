@@ -25,7 +25,7 @@ import com.google.appengine.api.modules.ModulesServiceFactory;
  * {@code ModulesServiceComponent} is a Gig component which is representing 
  * Google App Engine {@code ModulesService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("com.google.appengine.api.modules.ModulesService")
 @AppEngine

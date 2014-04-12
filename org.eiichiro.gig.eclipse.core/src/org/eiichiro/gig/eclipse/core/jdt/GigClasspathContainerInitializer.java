@@ -13,7 +13,7 @@ import org.eclipse.jdt.core.JavaCore;
 /**
  * {@code GigClasspathContainerInitializer}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class GigClasspathContainerInitializer extends
 		ClasspathContainerInitializer {

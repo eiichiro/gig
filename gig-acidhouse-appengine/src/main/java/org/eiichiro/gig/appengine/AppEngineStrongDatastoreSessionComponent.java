@@ -24,7 +24,7 @@ import org.eiichiro.jaguar.scope.Request;
  * {@code AppEngineStrongDatastoreSessionComponent} is a Gig component which is 
  * representing Acid House {@code AppEngineStrongDatastoreSession}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("org.eiichiro.acidhouse.appengine.AppEngineStrongDatastoreSession")
 @Strong

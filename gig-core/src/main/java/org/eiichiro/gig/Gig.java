@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
  * {@code Gig} provides some utility methods to bootstrap/shutdown Gig 
  * application.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public final class Gig {
 

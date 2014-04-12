@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  * {@code PersistenceXMLProcessor} is a <code>persistence.xml</code> processor 
  * to get the information of persistence units.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class PersistenceXMLProcessor {
 

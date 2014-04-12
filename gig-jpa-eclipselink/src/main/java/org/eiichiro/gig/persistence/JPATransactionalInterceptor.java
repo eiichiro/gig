@@ -31,7 +31,7 @@ import org.eiichiro.reverb.reflection.Invocation;
  * method) and to control the transaction commitment of JPA (Java Persistence API) 
  * {@code EntityManager}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Transactional
 @Interceptor

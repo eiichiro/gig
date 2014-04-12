@@ -11,7 +11,7 @@ import org.eiichiro.ash.Usage;
 /**
  * {@code Exit}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Exit implements Command {
 

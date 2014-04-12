@@ -25,7 +25,7 @@ import com.google.appengine.api.datastore.PostalAddress;
  * {@code com.google.appengine.api.datastore.PostalAddress}.
  * This converter is used in Web endpoint parameter construction.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class PostalAddressConverter extends AbstractConverter {
 

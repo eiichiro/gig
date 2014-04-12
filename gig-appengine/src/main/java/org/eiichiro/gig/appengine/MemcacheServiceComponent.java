@@ -25,7 +25,7 @@ import com.google.appengine.api.memcache.MemcacheServiceFactory;
  * {@code MemcacheServiceComponent} is a Gig component which is representing 
  * Google App Engine {@code MemcacheService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("com.google.appengine.api.memcache.MemcacheService")
 @AppEngine

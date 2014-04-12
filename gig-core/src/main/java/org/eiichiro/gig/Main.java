@@ -21,7 +21,7 @@ import static org.eiichiro.gig.Version.*;
  * {@code Main} is a command line interface to print the information about this 
  * Gig build.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Main {
 

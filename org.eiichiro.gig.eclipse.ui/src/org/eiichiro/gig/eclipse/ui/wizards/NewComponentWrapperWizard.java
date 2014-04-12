@@ -23,7 +23,7 @@ import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.internal.ui.wizards.NewElementWizard;
 
 /**
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @SuppressWarnings("restriction")
 public class NewComponentWrapperWizard extends NewElementWizard {

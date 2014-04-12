@@ -4,6 +4,6 @@
 /**
  * {@code package-info}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 package org.eiichiro.gig.eclipse.ui.handlers;

@@ -28,7 +28,7 @@ import org.eiichiro.reverb.reflection.Invocation;
  * annotated component method) and to control the transaction commitment of Acid 
  * House {@code AppEngineStrongDatastoreSession}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @GlobalTransactional
 @Interceptor

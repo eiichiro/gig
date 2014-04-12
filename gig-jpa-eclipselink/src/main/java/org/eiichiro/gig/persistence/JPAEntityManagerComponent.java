@@ -30,7 +30,7 @@ import org.eiichiro.jaguar.validation.Required;
  * {@code JPAEntityManagerComponent} is a representing JPA 2.0 
  * {@code EntityManager} for PostgreSQL-based Heroku database service.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("org.eiichiro.gig.persistence.JPAEntityManager")
 @Request

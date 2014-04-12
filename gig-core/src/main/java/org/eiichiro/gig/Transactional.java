@@ -25,7 +25,7 @@ import org.eiichiro.jaguar.interceptor.Intercept;
  * {@code Transactional} is a intercept annotation to control Acid Houses' NoSQL 
  * database transaction declaratively.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

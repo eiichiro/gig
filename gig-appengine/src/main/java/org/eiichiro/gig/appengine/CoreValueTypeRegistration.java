@@ -37,7 +37,7 @@ import com.google.appengine.api.datastore.Text;
  * specific core value type in Google App Engine environment by this component.
  * The registration is processed at once while the application's bootstrap.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Singleton(eager=true)
 public class CoreValueTypeRegistration {

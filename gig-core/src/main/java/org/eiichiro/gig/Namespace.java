@@ -38,7 +38,7 @@ import com.google.common.base.Preconditions;
  * the specified key in the <b>current</b> context of the specified scope.
  * This API is designed for shared-multitenancy application.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Builtin
 @Name("org.eiichiro.gig.Namespace")
@@ -116,7 +116,7 @@ public class Namespace {
 	/**
 	 * Namespace value store.
 	 * 
-	 * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+	 * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
 	 */
 	public static final class Store implements Serializable {
 		

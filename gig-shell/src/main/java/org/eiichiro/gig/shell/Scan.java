@@ -46,7 +46,7 @@ import org.eiichiro.reverb.system.Environment;
 /**
  * {@code Scan}
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class Scan implements Command {
 

@@ -25,7 +25,7 @@ import com.google.appengine.api.backends.BackendServiceFactory;
  * {@code BackendServiceComponent} is a Gig component which is representing 
  * Google App Engine {@code BackendService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Deprecated
 @Name("com.google.appengine.api.backends.BackendService")

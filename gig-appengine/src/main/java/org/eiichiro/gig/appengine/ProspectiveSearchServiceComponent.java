@@ -25,7 +25,7 @@ import com.google.appengine.api.prospectivesearch.ProspectiveSearchServiceFactor
  * {@code ProspectiveSearchServiceComponent} is a Gig component which is 
  * representing Google App Engine {@code ProspectiveSearchService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("com.google.appengine.api.prospectivesearch.ProspectiveSearchService")
 @AppEngine

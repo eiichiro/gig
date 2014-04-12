@@ -25,7 +25,7 @@ import org.eiichiro.jaguar.inject.Binding;
  * {@code AppEngine} is a binding annotation to qualify Google App Engine 
  * specific service components.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

@@ -25,7 +25,7 @@ import com.google.appengine.api.appidentity.AppIdentityServiceFactory;
  * {@code AppIdentityServiceComponent} is a Gig component which is representing 
  * Google App Engine {@code AppIdentityService}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 @Name("com.google.appengine.api.appidentity.AppIdentityService")
 @AppEngine

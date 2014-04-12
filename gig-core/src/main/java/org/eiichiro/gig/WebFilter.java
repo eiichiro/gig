@@ -42,7 +42,7 @@ import org.eiichiro.jaguar.inject.Inject;
  * {@code WebFilter} is a {@code org.eiichiro.bootleg.BootlegFilter} extension 
  * for Gig to setup Web contexts and Web endpoints from {@code org.eiichiro.gig.Configuration}.
  * 
- * @author <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>
+ * @author <a href="mailto:mail@eiichiro.org">Eiichiro Uchiumi</a>
  */
 public class WebFilter extends BootlegFilter {
 
