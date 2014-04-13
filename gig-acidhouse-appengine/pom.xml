@@ -2,7 +2,7 @@
   <parent>
   	<groupId>org.eiichiro.gig</groupId>
   	<artifactId>gig</artifactId>
-  	<version>0.4.3</version>
+  	<version>0.4.4-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -17,7 +17,7 @@
   	<dependency>
   		<groupId>org.eiichiro.gig</groupId>
   		<artifactId>gig-appengine</artifactId>
-  		<version>0.4.3</version>
+  		<version>0.4.4-SNAPSHOT</version>
   		<scope>compile</scope>
   	</dependency>
   	<dependency>
