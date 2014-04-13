@@ -2,12 +2,12 @@
   <parent>
   	<groupId>org.eiichiro.gig</groupId>
   	<artifactId>gig</artifactId>
-  	<version>0.4.3-SNAPSHOT</version>
+  	<version>0.4.3</version>
     <relativePath>..</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>gig-jpa-eclipselink</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
   <name>Gig JPA EclipseLink</name>
   <description>JPA components with EclipseLink</description>
   <repositories>
