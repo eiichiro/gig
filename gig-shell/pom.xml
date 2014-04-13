@@ -96,7 +96,7 @@
   	</dependency>
   	<dependency>
   		<groupId>org.eiichiro.ash</groupId>
-  		<artifactId>ash</artifactId>
+  		<artifactId>ash-java</artifactId>
   		<version>0.0.1</version>
   		<scope>compile</scope>
   	</dependency>
