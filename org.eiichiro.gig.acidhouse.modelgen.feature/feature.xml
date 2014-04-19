@@ -13,7 +13,7 @@
    </copyright>
 
    <license url="http://www.apache.org/licenses/LICENSE-2.0">
-Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+      Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
@@ -36,7 +36,6 @@ limitations under the License.
          id="org.eiichiro.gig.acidhouse.modelgen"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         version="0.0.0"/>
 
 </feature>
