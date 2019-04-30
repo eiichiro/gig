@@ -1,0 +1,24 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/jaguar/jaguar-core/2.0-rc5/jaguar-core-2.0-rc5.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/ch/qos/logback/logback-classic/0.9.28/logback-classic-0.9.28.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/ch/qos/logback/logback-core/0.9.29/logback-core-0.9.29.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/guava/guava/r09/guava-r09.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/cglib/cglib/2.2.2/cglib-2.2.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/asm/asm/3.3.1/asm-3.3.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/bootleg/bootleg/0.5.1/bootleg-0.5.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.2/jcl-over-slf4j-1.6.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/code/gson/gson/1.7.1/gson-1.7.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/acidhouse/acidhouse-appengine/0.6.3/acidhouse-appengine-0.6.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/acidhouse/acidhouse-api/0.6.2/acidhouse-api-0.6.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/reverb/reverb/1.2.1/reverb-1.2.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eiichiro/acidhouse/acidhouse-modelgen/0.6.2/acidhouse-modelgen-0.6.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/appengine/appengine-api-1.0-sdk/1.9.6/appengine-api-1.0-sdk-1.9.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/appengine/appengine-api-labs/1.9.6/appengine-api-labs-1.9.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

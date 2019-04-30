@@ -16,8 +16,8 @@
   			<artifactId>maven-compiler-plugin</artifactId>
   			<version>3.1</version>
   			<configuration>
-  				<source>1.7</source>
-  				<target>1.7</target>
+  				<source>1.8</source>
+  				<target>1.8</target>
   			</configuration>
   		</plugin>
   		<plugin>
@@ -45,7 +45,7 @@
   			<configuration>
   				<bottom><![CDATA[Copyright © 2014 <a href="mailto:eiichiro@eiichiro.org">Eiichiro Uchiumi</a>. All Rights Reserved.]]></bottom>
   				<doctitle>${project.name} ${project.version} API Specifications</doctitle>
-  				<source>1.7</source>
+  				<source>1.8</source>
   			</configuration>
   		</plugin>
   	</plugins>
