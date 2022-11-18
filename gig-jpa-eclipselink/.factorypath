@@ -15,13 +15,12 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/google/code/gson/gson/1.7.1/gson-1.7.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa/2.4.0/org.eclipse.persistence.jpa-2.4.0.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.4.v201112161009/javax.persistence-2.0.4.v201112161009.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.asm/3.3.1.v201206041142/org.eclipse.persistence.asm-3.3.1.v201206041142.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.antlr/3.2.0.v201206041011/org.eclipse.persistence.antlr-3.2.0.v201206041011.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa.jpql/2.4.0/org.eclipse.persistence.jpa.jpql-2.4.0.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.core/2.4.0/org.eclipse.persistence.core-2.4.0.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa.modelgen/2.4.0/org.eclipse.persistence.jpa.modelgen-2.4.0.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa.modelgen.processor/2.4.0/org.eclipse.persistence.jpa.modelgen.processor-2.4.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa/2.7.11/org.eclipse.persistence.jpa-2.7.11.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.asm/9.3.0/org.eclipse.persistence.asm-9.3.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.antlr/2.7.11/org.eclipse.persistence.antlr-2.7.11.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa.jpql/2.7.11/org.eclipse.persistence.jpa.jpql-2.7.11.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.core/2.7.11/org.eclipse.persistence.core-2.7.11.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/persistence/org.eclipse.persistence.jpa.modelgen.processor/2.7.11/org.eclipse.persistence.jpa.modelgen.processor-2.7.11.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>
