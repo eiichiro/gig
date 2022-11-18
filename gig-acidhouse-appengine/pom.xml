@@ -139,6 +139,15 @@
   					</lifecycleMappingMetadata>
   				</configuration>
   			</plugin>
+			<plugin>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.22.1</version>
+			<configuration>
+				<argLine>
+				--add-opens java.base/java.lang=ALL-UNNAMED
+				</argLine>
+			</configuration>
+			</plugin>
   		</plugins>
   	</pluginManagement>
   </build>
